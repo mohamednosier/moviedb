@@ -63,7 +63,7 @@ public class MovieSlideAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         String upcoming = "movie/upcoming";
-        String nowPlaying = "movie/now_playing";
+        String nowPlaying = "movie/now_pzlaying";
         String popular = "movie/popular";
         String topRated = "movie/top_rated";
         Bundle args = new Bundle();

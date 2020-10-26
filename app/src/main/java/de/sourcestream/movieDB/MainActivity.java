@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
     private MovieSlideTab movieSlideTab = new MovieSlideTab();
     private TVSlideTab tvSlideTab = new TVSlideTab();
-    private About about = new About();
+
     private GenresList genresList = new GenresList();
     private SearchList searchList = new SearchList();
 
@@ -629,7 +629,6 @@ public class MainActivity extends AppCompatActivity {
      * @param menu The options menu as last shown or first initialized by onCreateOptionsMenu().
      * @return You must return true for the menu to be displayed; if you return false it will not be shown.
      * If the navigation drawer is opened we hide the search view.
-     * If we are on genres or about view we hide the search view.
      */
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
@@ -695,13 +694,6 @@ public class MainActivity extends AppCompatActivity {
                         genresList.updateList();
                     break;
 
-                case 4:
-                    if (oldPos == position) {
-                        mDrawerLayout.closeDrawer(mDrawerList);
-                        break;
-                    }
-                    fragment = about;
-                    break;
 
                 default:
                     break;
